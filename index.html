@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Facebook </title>
+
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- font awesome cdn -->
+    <script src="https://kit.fontawesome.com/3dfa760d15.js" crossorigin="anonymous"></script>
+
+    <!-- Css file link -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- header section start -->
+    <header class="header bg-dark sticky-top">
+
+        <nav class="navbar navbar-expand-sm navbar-dark  p-2">
+
+            <a href="#" class="navbar-brand px-2">
+                <i class="fa-solid fa-house px-2 "></i>Facebook
+            </a>
+                   
+            <button class="navbar-toggler mx-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+
+                    <ul class="navbar-nav ms-auto px-5 d-flex">
+        
+                        <li class="nav-item ">
+                            <a href="#" class="nav-link">
+                                <i class="fa-solid fa-earth-americas text-white"></i>
+                                <span class="nav-text d-sm-none">Newsfeed</span>
+                            </a>
+                        </li>
+        
+                        <li class="nav-item ">
+                            <a href="#" class="nav-link">
+                                <i class="fa-solid fa-user  text-white"></i>
+                                <span class="nav-text d-sm-none">Account</span>
+                            </a>
+                        </li>
+        
+                        <li class="nav-item ">
+                            <a href="#" class="nav-link">
+                                <i class="fa-solid fa-message  text-white"></i>
+                                <span class="nav-text d-sm-none">Messanger</span>
+                            </a>
+                        </li>
+        
+                        <li class="nav-item dropdown dropstart mb-2 mb-lg-0">
+                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-bell text-white"></i>
+                                <span class="position-absolute top-40 start-sm-40  translate-middle badge rounded-pill bg-danger ">
+                                   3+
+                                </span>
+                                <span class="nav-text d-sm-none">Notifications</span>
+                                
+                            </a>
+                            <ul class="dropdown-menu dropup" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="#">Emon like your post</a></li>
+                              <li><a class="dropdown-item" href="#">Some one Commented on your post</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#">Previous notifications...</a></li>
+                            </ul>
+                        </li>              
+                    </ul>
+
+                <form class="d-flex">
+                    <input class="form-control mx-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn button" type="submit">Search</button>
+                </form>
+
+            </div>
+
+        </nav>
+
+    </header>
+    <!-- Header section end here -->
+
+
+    <!-- main section start here -->
+    <main class="main row m-auto  top-5">
+
+
+        <!-- profile section start -->
+        <section class="container mt-4 mx-auto profile col-lg-4">
+
+            <div class="card text-center  mb-2 crd">
+                
+                <div class="card-body">
+                    <h4 class="card-title">Ariyan Hosain Emon</h4>
+                    <img class="profile-pic rounded-circle" src="image/emon.jpg" alt="picture of emon">
+                    <hr>
+                    <div class="">                     
+                        <div>
+                            <i class="fa-solid fa-pencil me-1"></i> Web Developer
+                        </div>
+          
+                        <div>
+                            <i class="fa-solid fa-house-chimney me-1"></i> Bangladesh,Dhk
+                        </div>
+       
+                        <div>
+                            <i class="fa-solid fa-cake-candles me-1"></i> March- 5 - 2002
+                        </div>    
+                    </div>
+                </div>
+                     
+            </div>
+
+            <div class="card mb-2">
+                <ul class="list-group ">
+
+                    <li class="list-group-item ">
+                        <i class="fa-solid fa-group-arrows-rotate"></i> My Group
+                    </li>
+
+                    <li class="list-group-item">
+                        <i class="fa-solid fa-calendar-days"></i> My Event
+                    </li>
+
+                    <li class="list-group-item">
+                        <i class="fa-regular fa-image"></i> My Photo
+                    </li>
+
+                </ul>
+
+            </div>
+
+            
+            <div class="card alert alert-light alert-dismissible">
+                <strong>Hey!</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                <hr>
+                People are loking at your profile. <a href="#">Find out Who?</a>
+            </div>
+            
+
+        </section>
+        <!-- profile section end here -->
+
+
+
+        <!-- newsfeed section start -->
+        <section class="container mt-4 mx-auto col-lg-5">
+
+            <div class="card mb-2">
+                
+                <div class="card-body">
+
+                    <h4 class="card-title text-center pb-1">What's On your Mind ?</h4>
+
+                    <div class="m-2">
+                        <form action="#">
+                            <input class="form-control rounded-pill" type="text" value="Type here">
+                        </form>
+
+                       <div class="d-flex">
+
+                        <button class="btn btn-primary mt-2 d-block me-auto">
+                            <i class="fa-solid fa-photo-film"></i> Photo/Video
+                        </button>
+
+                        <button class="btn btn-outline-primary mt-2 d-block ms-auto">
+                            <i class="fa-solid fa-share"></i> Post
+                        </button>
+                        
+                       </div>
+                    </div>
+                </div>
+                     
+            </div>
+
+
+            <div class="card  mb-3">
+                
+                <div class="card-body">
+
+                   <div class="d-flex justify-content-between">              
+                    <p class="">
+                        <img class="post-pp-pic rounded-circle" src="image/emon.jpg" alt="picture of emon">
+                        <span class="profile-name">Ariyan Hosain Emon</span>
+                    </p>
+                    <p class="post-time">1 minute ago</p>
+                   </div>
+
+                    <hr>
+
+                    <p class="post-caption">It's a picture of a galaxy which is known as humbola</p>                
+                    <div class="post-item mb-1">
+                        <img class="post-img" src="./image/post-1.jpg" alt="picture of galaxy"> 
+                    </div>
+
+                    <div class="mt-2">
+                        <button class="button mx-1"><i class="fa-regular fa-thumbs-up"></i> Like</button>
+                        <button class="button"><i class="fa-solid fa-comment"></i> Comment</button>
+                    </div>
+
+                </div>
+                     
+            </div>
+
+
+            <div class="card   mb-3">
+                
+                <div class="card-body">
+
+                   <div class="d-flex justify-content-between">              
+                    <p class="">
+                        <img class="post-pp-pic rounded-circle" src="image/elina.jpg" alt="picture of elina">
+                        <span class="profile-name">Noushin Tabassum Elina</span>
+                    </p>
+                    <p class="post-time">10 minute ago</p>
+                   </div>
+
+                    <hr>
+
+                    <p class="post-caption">Beautiful Place to visit</p>
+                    <div class="post-item row">
+                        <div class="mb-1 col-6">
+                            <img class="post-img" src="./image/post-2.jpg" alt="picture of nature">
+                        </div>
+                        <div class="mb-1 col-6">
+                            <img class="post-img" src="./image/post-3.jpg" alt="picture of nature">
+                        </div>
+                    </div>
+
+                    <div class="mt-2">
+                        <button class="button mx-1"><i class="fa-regular fa-thumbs-up"></i> Like</button>
+                        <button class="button"><i class="fa-solid fa-comment"></i> Comment</button>
+                    </div>
+
+                </div>
+                     
+            </div>
+
+            <div class="card   mb-3">
+                
+                <div class="card-body">
+
+                   <div class="d-flex justify-content-between">              
+                    <p class="">
+                        <img class="post-pp-pic rounded-circle" src="image/emon.jpg" alt="picture of elina">
+                        <span class="profile-name">Ariyan Hosain Emon</span>
+                    </p>
+                    <p class="post-time">1 Hour ago</p>
+                   </div>
+
+                    <hr>
+
+                    <p class="post-caption">Coding is Fun</p>
+                    <div class="post-item">
+                        <div class="mb-1">
+                            <img class="post-img" src="./image/post-4.jpg" alt="picture of pc">
+                        </div>
+                    </div>
+
+                    <div class="mt-2">
+                        <button class="button mx-1"><i class="fa-regular fa-thumbs-up"></i> Like</button>
+                        <button class="button"><i class="fa-solid fa-comment"></i> Comment</button>
+                    </div>
+
+                </div>
+                     
+            </div>
+
+
+            <div class="card   mb-3">
+                
+                <div class="card-body">
+
+                   <div class="d-flex justify-content-between">              
+                    <p class="">
+                        <img class="post-pp-pic rounded-circle" src="image/pp.jpg" alt="picture of elina">
+                        <span class="profile-name">Programming Hero</span>
+                         
+                    </p>
+                    <p class="post-time">1 Hour ago</p>
+                   </div>
+
+                    <hr>
+
+                    <p class="post-caption"> Visit Programming hero for enroll the cource Of Web Development</p>
+                    <div class="post-item">
+                        <div class="mb-1">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus impedit et, consequuntur placeat sit fugit voluptatem illum dicta? Porro deleniti similique amet explicabo totam nesciunt cumque. Nemo provident quam veritatis.
+
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, nisi debitis iusto earum dicta ratione, doloremque porro cum eos nostrum rerum placeat fugit aliquam, beatae quos omnis molestiae vero id!.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="mt-2">
+                        <button class="button mx-1"><i class="fa-regular fa-thumbs-up"></i> Like</button>
+                        <button class="button"><i class="fa-solid fa-comment"></i> Comment</button>
+                    </div>
+
+                </div>
+                     
+            </div>
+
+            <div class="card   mb-3">
+                
+                <div class="card-body">
+
+                   <div class="d-flex justify-content-between">              
+                    <p class="">
+                        <img class="post-pp-pic rounded-circle" src="image/buydope.jpg" alt="picture of buydope">
+                        <span class="profile-name">BuyDope Bd</span>
+                    </p>
+                    <p class="post-time">2 Hour ago</p>
+                   </div>
+
+                    <hr>
+
+                    <p class="post-caption">Visit our Shop For exciting discount and exclusive product.</p>
+                    <div class="post-item row">
+                        <div class="mb-1  col-6">
+                            <img class="post-img" src="./image/pic-3.jpg" alt="picture of shop">
+                        </div>
+                        <div class="mb-1 col-6">
+                            <img class="post-img" src="./image/pic-4.jpg" alt="picture of shop">
+                        </div>
+                        <div class="mb-1 col-12">
+                            <img class="post-img" src="./image/pic-5.jpg" alt="picture of shop">
+                        </div>
+                    </div>
+
+                    <div class="mt-2">
+                        <button class="button mx-1"><i class="fa-regular fa-thumbs-up"></i> Like</button>
+                        <button class="button "><i class="fa-solid fa-comment"></i> Comment</button>
+                    </div>
+
+                </div>
+                     
+            </div>
+
+        </section>
+        <!-- newsfeed section end -->
+
+
+
+        <!-- aside section start -->
+        <aside class="container mt-4 mx-auto col-lg-3">
+
+            <div class="card  mb-3 ">
+                
+                <div class="card-body text-center">
+
+                   
+                    <h4 class="mb-2"> Up Coming Event </h4>
+
+                    <div class="post-item mb-1">
+                        <img class="post-img" src="./image/event.jpg" alt="picture of galaxy"> 
+                    </div>
+
+                    <p class="mb-1"> <strong> Show </strong> </p>
+                    <p class="mb-1"> Friday 7:00 PM </p>
+
+                    
+                    <button class="button info-btn mb-1"> Info </button>
+                        
+
+                </div>
+                     
+            </div>
+
+
+            <div class="card  mb-3 ">
+                
+                <div class="card-body text-center">
+
+                   
+                    <h5 class="mb-2"> Friend Request </h5>
+
+                    <div class="post-item mb-1">
+                        <img class="post-img" src="./image/request-pic.jpg" alt="picture of galaxy"> 
+                    </div>
+                    <h3 class="m-1"> Saleka Maleka </h3>
+                    
+                    <div class="m-2 d-flex">
+                        <button class="btn btn-success req-btn mx-1"> Accept </button>
+                        <button class="btn btn-danger  req-btn mx-1"> Delete </button>
+                    </div>
+                        
+
+                </div>
+                     
+            </div>
+
+            <div class="card  mb-3 ">
+                
+                <div class="card-body text-center">
+                   
+                    <h5 class="mb-2"> Birthday's </h5>
+                    <hr>
+                    <p>
+                        <i class="fa-solid fa-cake-candles"></i> <span> <strong>Ratul Sikdar'</strong>s Birthday Today </span>
+                    </p>
+                    
+                </div>
+                     
+            </div>
+
+
+        </aside>
+        <!-- aside section end -->
+
+    </main>
+    <!-- main section start here -->
+
+
+    <footer class="bg-dark footer">
+
+        <p class="footer-text">Copyright Owner &copy; Emon || Develop By emon</p>
+
+        <ul class="footer-menu">
+
+            <li class="footer-list">
+                <a class="footer-link" href="https://www.facebook.com/profile.php?id=100011417689239">
+                    <i class="fa-brands fa-facebook fa-2x"></i>
+                </a>
+            </li>
+
+            <li class="footer-list">
+                <a class="footer-link" href="https://github.com/emon3455">
+                    <i class="fa-brands fa-github fa-2x"></i>
+                </a>
+            </li>
+
+            <li class="footer-list">
+                <a class="footer-link" href="https://www.linkedin.com/feed/">
+                    <i class="fa-brands fa-linkedin fa-2x"></i>
+                </a>
+            </li>
+        </ul>
+
+    </footer>
+
+
+
+    
+    <!-- bootstrap js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
